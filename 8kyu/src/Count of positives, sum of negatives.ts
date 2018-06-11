@@ -1,15 +1,14 @@
-export function countPositivesSumNegatives(input: any) {
-  
-  let out: Array<number>;
-  
-  input.filter((number) => {
-    if(number > 0){
-      out = number;
-      
-    }
-    
-  });
-  return out.reduce((p, c) => p + c, 0);
-}
+// TODO: Count of positives / sum of negatives
+// TODO: https://www.codewars.com/kata/count-of-positives-slash-sum-of-negatives/discuss/typescript
 
-countPositivesSumNegatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]);//?
+export function countPositivesSumNegatives(input: any): Array<number> {
+  if (input == null && input.length) return [];
+
+  return input.reduce(
+    (acc, val) => {
+      val > 0 ? (acc[0] += 1) : (acc[1] += val);
+      return acc;
+    },
+    [0, 0]
+  );
+}
