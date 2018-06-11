@@ -3,8 +3,16 @@ import { assert } from "chai";
 
 describe("countPositivesSumNegatives", () => {
   it("basic tests", () => {
-    let testData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+    let testData = null;
     let actual = countPositivesSumNegatives(testData);
+    assert.deepEqual(actual, []);
+
+    testData = [];
+    actual = countPositivesSumNegatives(testData);
+    assert.deepEqual(actual, []);
+
+    testData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+    actual = countPositivesSumNegatives(testData);
     let expected = [10, -65];
     assert.deepEqual(actual, expected);
 

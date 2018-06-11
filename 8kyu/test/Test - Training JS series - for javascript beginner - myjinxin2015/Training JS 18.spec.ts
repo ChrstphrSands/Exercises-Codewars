@@ -1,9 +1,7 @@
-import Test = Mocha.Test;
 import { assert } from "chai";
-import { countPositivesSumNegatives } from "../../src/Count of positives, sum of negatives";
-import { splitAndMerge } from "../../src/Training JS series - for javascript beginner - myjinxin2015/Training JS #18: Methods of String object--concat() split() and its good friend join()";
+import { splitAndMerge } from "../../src/Training JS series - for javascript beginner - myjinxin2015/Training JS 18";
 
-describe("countPositivesSumNegatives", () => {
+describe("splitAndMerge", () => {
   it("basic tests", () => {
     assert.equal(
       splitAndMerge("My name is John", " "),
