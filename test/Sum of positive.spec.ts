@@ -1,4 +1,4 @@
-import solution = require('../src/Sum of positive');
+import solution = require("../src/Sum of positive");
 
 import { assert } from "chai";
 

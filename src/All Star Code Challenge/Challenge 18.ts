@@ -4,7 +4,7 @@
 export function strCount(str, letter): number {
   // TODO Refactor
   return str.split(letter).length - 1;
-  
+
   // TODO First solution
   // let count = 0;
   // str.split("").filter(lt => (lt === letter ? count++ : count));

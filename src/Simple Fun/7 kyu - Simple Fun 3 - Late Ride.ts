@@ -7,6 +7,9 @@ export const lateRide = (n: number): number => {
   // for (let i = 0; i < value.length; i++) {
   //   result += parseInt(value.charAt(i));
   // }
-  
-  return [~~(n / 60), (n % 60)].join("").split("").reduce((a, b) => a + +(b),  0);
+
+  return [~~(n / 60), n % 60]
+    .join("")
+    .split("")
+    .reduce((a, b) => a + +b, 0);
 };
