@@ -5,7 +5,7 @@ module.exports = function (wallaby) {
     ],
 
     tests: [
-      '8kyu/test/**/*.spec.ts'
+      'test/**/*.spec.ts'
     ],
     // testFramework: 'mocha',
     // '**/*.ts': wallaby.compilers.typeScript({
